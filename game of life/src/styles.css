@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.Controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.Controls button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.Controls input[type="range"] {
+    width: 50%;
+}
+
+.Grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20px, 1fr));
+    grid-gap: 1px;
+    border: 1px solid #ccc;
+}
+
+.Cell {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.Cell.alive {
+    background-color: #000;
+}
+
+@media (max-width: 600px) {
+    .Controls {
+        flex-direction: column;
+    }
+
+    .Controls button,
+    .Controls input[type="range"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .Grid {
+        grid-template-columns: repeat(auto-fill, minmax(10px, 1fr));
+    }
+
+    .Cell {
+        width: 10px;
+        height: 10px;
+    }
+}

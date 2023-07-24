@@ -1,0 +1,9 @@
+Develop a web application with convays game of life in react and openui5.
+
+----------------
+
+Develop a landing page for an AI tool that can be used to build projects based on the current project structure and user input. Use python flask framework.
+
+The AI tool is able to generate projects based on a prompt and later input. Focus on creating a landing page, because you are working inside this tool right now
+
+I want it to have an input field and part of the screen is covered with generated text, the second part displays the file structure of the project, after finishing the user is able to download a zip archive of the project
