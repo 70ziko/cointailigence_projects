@@ -1,0 +1,86 @@
+Let's start by creating the package manager dependency file. For Python, we typically use pip and the requirements.txt file. For JavaScript, we use npm and the package.json file.
+
+requirements.txt
+```txt
+Django==3.1.7
+djangorestframework==3.12.2
+django-cors-headers==3.7.0
+```
+
+package.json
+```json
+{
+  "name": "recipe-app",
+  "version": "1.0.0",
+  "description": "A web app for creating and sharing recipes",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0"
+  }
+}
+```
+
+To set up the project, follow these steps:
+
+1. Clone the project repository.
+```bash
+git clone https://github.com/<username>/recipe-app.git
+```
+
+2. Navigate to the project directory.
+```bash
+cd recipe-app
+```
+
+3. Install the Python dependencies.
+```bash
+pip install -r requirements.txt
+```
+
+4. Install the JavaScript dependencies.
+```bash
+npm install
+```
+
+5. Navigate to the DjangoApp directory and run the Django migrations.
+```bash
+cd DjangoApp
+python manage.py makemigrations
+python manage.py migrate
+```
+
+6. Start the Django server.
+```bash
+python manage.py runserver
+```
+
+7. In a new terminal, navigate to the Frontend directory and start the React app.
+```bash
+cd Frontend
+npm start
+```
+
+For cleaning up the project and moving files, it depends on the specific files and directories that need to be moved or deleted. However, here are some general commands:
+
+To move a file:
+```bash
+mv <source_file_path> <destination_file_path>
+```
+
+To delete a file:
+```bash
+rm <file_path>
+```
+
+To delete a directory and its contents:
+```bash
+rm -r <directory_path>
+```

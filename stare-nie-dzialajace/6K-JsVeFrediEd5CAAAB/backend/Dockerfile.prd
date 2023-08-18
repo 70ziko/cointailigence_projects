@@ -1,0 +1,24 @@
+FROM alpine:latest as build
+
+RUN apk add --no-cache npm
+
+WORKDIR /app/seed-express-backend
+
+COPY ./package.json .
+COPY ./package-lock.json .
+
+RUN npm ci --omit=dev && npm cache clean --force
+
+FROM alpine:latest as production
+
+RUN apk add --no-cache nodejs-current
+
+RUN addgroup -S node && adduser -S node -G node
+
+WORKDIR /app/seed-express-backend
+USER node
+
+COPY --from=build /app/seed-express-backend /app/seed-express-backend/
+COPY ./backend/src ./backend/src
+
+CMD [ "node", "backend/src/app.prd.js" ]

@@ -1,0 +1,14 @@
+.share-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.share-card h2 {
+    margin-top: 0;
+}
+
+.share-card .share-link {
+    color: #007BFF;
+}

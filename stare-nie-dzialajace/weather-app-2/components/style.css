@@ -1,0 +1,18 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.highlight {
+    background-color: rgb(252, 221, 160);
+}
+
+.error {
+    font-size: 13px;
+    color: red;
+}
+
+.top_text {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 2rem;
+}

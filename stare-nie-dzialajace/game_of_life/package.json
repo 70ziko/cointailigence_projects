@@ -1,0 +1,16 @@
+{
+  "name": "game-of-life",
+  "version": "1.0.0",
+  "description": "A web application for Conway's Game of Life",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

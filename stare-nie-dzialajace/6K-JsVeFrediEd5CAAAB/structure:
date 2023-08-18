@@ -1,0 +1,11 @@
+{
+    name: 'User Name',
+    profilePicture: 'url/to/profile/picture',
+    recipes: [
+        {
+            id: 'recipe1',
+            // other recipe properties...
+        },
+        // more recipes...
+    ]
+}

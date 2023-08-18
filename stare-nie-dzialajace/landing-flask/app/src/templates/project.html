@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Structure</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Project Structure</h1>
+    <div id="project-structure">
+        {% for item in project_structure %}
+            <div class="item">
+                {% if item.type == "Directory" %}
+                    <p><strong>Directory: </strong>{{ item.name }}</p>
+                    <div class="contents">
+                        {% for content in item.contents %}
+                            <p>{{ content.name }}</p>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <p><strong>File: </strong>{{ item.name }}</p>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

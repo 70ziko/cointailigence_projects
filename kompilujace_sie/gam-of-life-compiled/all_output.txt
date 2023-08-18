@@ -1,0 +1,59 @@
+The dependencies required by the project are defined in the `package.json` file. Here is the content of the file:
+
+conways-game-of-life/package.json
+```json
+{
+  "name": "conways-game-of-life",
+  "version": "1.0.0",
+  "description": "A web application for Conway's Game of Life",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "classnames": "^2.3.1"
+  }
+}
+```
+
+To setup the project, follow these steps:
+
+1. Clone the repository to your local machine.
+
+```bash
+git clone https://github.com/your-username/conways-game-of-life.git
+```
+
+2. Navigate to the project directory.
+
+```bash
+cd conways-game-of-life
+```
+
+3. Install the dependencies.
+
+```bash
+npm install
+```
+
+4. Start the development server.
+
+```bash
+npm start
+```
+
+The project should now be running at `http://localhost:3000`.
+
+To clean up the project from incorrect and not needed files, you can delete the `node_modules` directory and the `package-lock.json` file, then reinstall the dependencies.
+
+```bash
+rm -rf node_modules
+rm package-lock.json
+npm install
+```

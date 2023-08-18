@@ -1,0 +1,96 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.highlight {
+    background-color: rgb(252, 221, 160);
+}
+
+.error {
+    font-size: 13px;
+    color: red;
+}
+
+.top_text {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+
+/* User Registration, Login, and Logout Styles */
+.user-form {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.user-form input[type="text"],
+.user-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.user-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Recipe Creation and Sharing Styles */
+.recipe-form {
+    /* same styles as .user-form */
+}
+
+.recipe-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    resize: vertical;
+}
+
+/* Recipe Review Styles */
+.review-form {
+    /* same styles as .user-form */
+}
+
+.review-form textarea {
+    /* same styles as .recipe-form textarea */
+}
+
+/* User Profile Styles */
+.profile {
+    /* same styles as .user-form */
+}
+
+/* Search Styles */
+.search-form {
+    /* same styles as .user-form */
+}

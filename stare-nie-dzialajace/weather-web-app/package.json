@@ -1,0 +1,27 @@
+{
+  "name": "weather-web-app",
+  "version": "1.0.0",
+  "description": "A web application that provides users with current weather data and forecasts for the next five days.",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "keywords": [
+    "weather",
+    "web app",
+    "react"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "@ui5/webcomponents-react": "^0.10.0",
+    "axios": "^0.21.1",
+    "react-scripts": "4.0.3",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "react-router-dom": "^5.2.0"
+  }
+}

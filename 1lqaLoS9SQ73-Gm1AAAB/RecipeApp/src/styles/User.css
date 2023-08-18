@@ -1,0 +1,14 @@
+.user-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.user-card h2 {
+    margin-top: 0;
+}
+
+.user-card .user-email {
+    color: #007BFF;
+}

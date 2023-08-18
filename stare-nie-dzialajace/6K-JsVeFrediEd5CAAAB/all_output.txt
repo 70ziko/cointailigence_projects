@@ -1,0 +1,40 @@
+The first step is to modify the backend/src/api/index.js file. This file will be the main API file that handles all the API endpoints for the web app. We will import the recipe controller and set up the API endpoints related to recipes.
+
+backend/src/api/index.js
+```javascript
+const { Router } = require('express')
+const recipeController = require('../controllers/recipe.controller')
+
+const router = Router()
+
+router.get('/recipes', recipeController.get)
+router.post('/recipes', recipeController.post)
+router.put('/recipes/:id', recipeController.put)
+router.delete('/recipes/:id', recipeController.delete)
+
+module.exports = router
+```
+
+In this file, we first import the Router function from the express module and the recipe controller. We then create a new router. The router is set up to handle GET, POST, PUT, and DELETE requests to the /recipes endpoint and uses the respective methods of the recipe controller to handle these requests. The router is then exported so it can be used in other parts of the application.
+
+The recipe controller already has the necessary methods (get, post, put, delete) to handle these requests. These methods use the recipe service to perform the necessary database operations. The recipe service methods (create, getAll, getById, update, delete) are already implemented in the backend/src/services/recipe.service.js file.
+
+The next step is to ensure that this API is used in the main server file. For that, we need to modify the main server file (backend/src/app.prd.js) to use this API.
+
+backend/src/app.prd.js
+```javascript
+const express = require('express')
+const bodyParser = require('body-parser')
+const api = require('./api')
+
+const app = express()
+
+app.use(bodyParser.json())
+app.use('/api', api)
+
+module.exports = app
+```
+
+In this file, we first import the express module, the bodyParser middleware, and our main API. We then create a new express application. The application is set up to use the bodyParser middleware to parse JSON request bodies and our main API for requests to the /api endpoint. The express application is then exported so it can be used in other parts of the application.
+
+With these changes, the main API is now set up to handle all API endpoints for the web app using the recipe controller.

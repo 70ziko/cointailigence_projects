@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>AI Project Builder</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <h1>Welcome to AI Project Builder</h1>
+        <form action="/create_project" method="post">
+            <label for="project_name">Enter Project Name:</label><br>
+            <input type="text" id="project_name" name="project_name" required><br>
+            <input type="submit" value="Create Project">
+        </form>
+        <div id="project_structure">
+            {% if project_structure %}
+                <h2>Project Structure:</h2>
+                <pre>{{ project_structure }}</pre>
+            {% endif %}
+        </div>
+        <div id="download_link">
+            {% if download_link %}
+                <h2>Download Project:</h2>
+                <a href="{{ download_link }}">Click here to download</a>
+            {% endif %}
+        </div>
+    </body>
+</html>

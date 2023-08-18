@@ -1,0 +1,24 @@
+The index.html file is already set up correctly. It already includes a div with the id "app" where the main App component will be rendered. Hence, there is no need to make any changes to this file. 
+
+Here's the content of the index.html file:
+
+recipe-sharing-web-app/public/index.html
+```html
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title></title>
+        <script data-ui5-config type="application/json">
+            {
+                "compactSize": false
+            }
+        </script>
+    </head>
+    <body style="margin: 0px;">
+        <div id="app"></div>
+    </body>
+</html>
+```
+This div with id "app" is where our React application will attach itself to. When our React application starts, it will replace this div with its own DOM and manage it thereafter.

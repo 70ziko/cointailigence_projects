@@ -1,0 +1,68 @@
+To document the code and usage of the application, we will create a `README.md` file in the root of our project directory. This file will provide an overview of the application, instructions on how to install and run the application, and a description of the application's structure and main components.
+
+Here is the content of the `README.md` file:
+
+README.md
+```md
+# Weather Web App
+
+This is a weather web application built with React and OpenUI5. It allows users to search for a location and view the current weather and a seven-day forecast for that location.
+
+## Installation
+
+To install the application, follow these steps:
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/weather-web-app.git
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd weather-web-app
+```
+
+3. Install the dependencies:
+
+```bash
+npm install
+```
+
+## Usage
+
+To run the application, use the `npm start` command:
+
+```bash
+npm start
+```
+
+This will start the application and open it in your default web browser. You can also view the application by navigating to `http://localhost:3000` in your web browser.
+
+To run the tests, use the `npm test` command:
+
+```bash
+npm test
+```
+
+This will run all the tests and display the results in the console.
+
+## Structure
+
+The application is structured as follows:
+
+- `public/index.html`: This is the main HTML file that includes the OpenUI5 library and loads our React application as a UI5 component.
+- `public/index.css`: This is the main CSS file that includes the styles for our application.
+- `src/App.js`: This is the main React component that renders the `LocationSearch`, `CurrentWeather`, and `SevenDayForecast` components.
+- `src/components/LocationSearch.js`: This is the React component that allows users to search for a location.
+- `src/components/CurrentWeather.js`: This is the React component that displays the current weather for a location.
+- `src/components/SevenDayForecast.js`: This is the React component that displays a seven-day forecast for a location.
+- `src/*.test.js`: These are the test files for our React components.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a pull request or open an issue.
+```
+
+This `README.md` file provides all the necessary information for someone to install, use, and contribute to the application. It also provides a brief overview of the application's structure and main components, which will be helpful for developers who want to understand how the application works.

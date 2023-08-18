@@ -1,0 +1,44 @@
+{
+  "scripts": {
+    "start-node-dev": "nodemon backend/src/app.dev.js --ignore frontend/",
+    "start-node-prd": "node backend/src/app.prd.js",
+    "start-webpack-dev": "webpack serve --config ./webpack.config.dev.js",
+    "build-webpack-prd": "webpack --config ./webpack.config.prd.js"
+  },
+  "dependencies": {
+    "connect-history-api-fallback": "latest",
+    "cookie-parser": "latest",
+    "express": "latest",
+    "hgi-debug": "latest",
+    "hgi-error": "latest",
+    "hgi-express": "latest",
+    "hgi-jwt": "latest",
+    "hgi-logger": "latest",
+    "hgi-react": "latest",
+    "hgi-webpack": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-router-dom": "latest",
+    "axios": "latest",
+    "react-toastify": "latest",
+    "@fortawesome/fontawesome-svg-core": "latest",
+    "@fortawesome/free-solid-svg-icons": "latest",
+    "@fortawesome/react-fontawesome": "latest",
+    "react-facebook": "latest",
+    "react-twitter-embed": "latest",
+    "react-instagram-embed": "latest"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "latest",
+    "@babel/preset-react": "latest",
+    "@ui5/webcomponents-react": "latest",
+    "babel-loader": "latest",
+    "css-loader": "latest",
+    "html-webpack-plugin": "latest",
+    "nodemon": "latest",
+    "style-loader": "latest",
+    "webpack": "latest",
+    "webpack-cli": "latest",
+    "webpack-dev-server": "latest"
+  }
+}
